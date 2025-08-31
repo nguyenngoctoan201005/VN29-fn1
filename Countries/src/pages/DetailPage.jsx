@@ -2,7 +2,7 @@ import './detailpage.css'
 
 export function DetailPage() {
     return (
-        <main>
+        <main className='det-container'>
             <div className="det_title">
                 CHI TIẾT
             </div>

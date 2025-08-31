@@ -1,8 +1,5 @@
-body {
-    margin-top: 150px;
-}
 
-section{
+.favourite-item{
     background-color: #452727;
     display: flex;
     justify-content: space-between;

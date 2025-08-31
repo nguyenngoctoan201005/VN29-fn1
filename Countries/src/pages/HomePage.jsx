@@ -2,7 +2,7 @@ import './homepage.css';
 
 export function HomePage() {
     return (
-        <main>
+        <main className='hm-container'>
             <section className="imgintro">
                 <div className="imgintro-img1">
                     <img src="img/1.png" alt="" />

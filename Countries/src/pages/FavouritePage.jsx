@@ -2,8 +2,8 @@ import './favouritepage.css'
 
 export function FavouritePage() {
     return (
-        <main>
-            <section>
+        <main className='fv-container'>
+            <section className="favourite-item">
                 <div className="sc-img">
                     <img src="img/Co-Vietnam.png" alt="" />
                 </div>
@@ -20,7 +20,7 @@ export function FavouritePage() {
                 </div>
             </section>
 
-            <section>
+            <section className="favourite-item">
                 <div className="sc-img">
                     <img src="img/Co-Vietnam.png" alt="" />
                 </div>
@@ -37,7 +37,7 @@ export function FavouritePage() {
                 </div>
             </section>
 
-            <section>
+            <section className="favourite-item">
                 <div className="sc-img">
                     <img src="img/Co-Vietnam.png" alt="" />
                 </div>

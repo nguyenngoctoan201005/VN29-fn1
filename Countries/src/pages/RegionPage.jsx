@@ -4,7 +4,7 @@ export function RegionPage() {
     return (
         <>
             <div className='tt'>ASIA</div>
-            <main>
+            <main className="region-container">
                 <div className="cpn-cont-det">
                     <div className="cpn-cont-det-img"><img src="img/Co-Vietnam.png" alt="" /></div>
                     <div className="cpn-cont-info">
