@@ -18,7 +18,7 @@ export function HomePage() {
                         ASIA
                     </div>
                     <div className="cpn-tt-xem">
-                    Xem tất cả
+                        Xem tất cả
                     </div>
                 </div>
                 <div className="cpn-cont">
@@ -61,7 +61,7 @@ export function HomePage() {
                                 <div>cioc : VIE </div>
                             </div>
                             <div className="cpn-cont-info-heart">
-                                <img src="img/heart.png" alt="" /> 
+                                <img src="img/heart.png" alt="" />
                             </div>
 
                         </div>
@@ -106,7 +106,7 @@ export function HomePage() {
                         ASIA
                     </div>
                     <div className="cpn-tt-xem">
-                    Xem tất cả
+                        Xem tất cả
                     </div>
                 </div>
                 <div className="cpn-cont">
@@ -149,7 +149,7 @@ export function HomePage() {
                                 <div>cioc : VIE </div>
                             </div>
                             <div className="cpn-cont-info-heart">
-                                <img src="img/heart.png" alt="" /> 
+                                <img src="img/heart.png" alt="" />
                             </div>
 
                         </div>
@@ -194,7 +194,7 @@ export function HomePage() {
                         ASIA
                     </div>
                     <div className="cpn-tt-xem">
-                    Xem tất cả
+                        Xem tất cả
                     </div>
                 </div>
                 <div className="cpn-cont">
@@ -237,7 +237,7 @@ export function HomePage() {
                                 <div>cioc : VIE </div>
                             </div>
                             <div className="cpn-cont-info-heart">
-                                <img src="img/heart.png" alt="" /> 
+                                <img src="img/heart.png" alt="" />
                             </div>
 
                         </div>
@@ -277,5 +277,6 @@ export function HomePage() {
             </section>
 
         </main>
+
     );
 }
