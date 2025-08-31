@@ -1,14 +1,14 @@
 import './nav.css'
-
+import { Link } from 'react-router-dom'
 export function Nav() {
   return (
     <nav>
-        <a href="RegionPage.html"><div class="tp">Africa</div></a>
-        <a href="RegionPage.html"><div class="tp">Americas</div></a>
-        <a href="RegionPage.html"><div class="tp">Asia</div></a>
-        <a href="RegionPage.html"><div class="tp">Europe</div></a>
-        <a href="RegionPage.html"><div class="tp">Oceania</div></a>
-        <a href="RegionPage.html"><div class="tp">Polar</div></a>
+        <Link to="/region"><div class="tp">Africa</div></Link>
+        <Link to="/region"><div class="tp">Americas</div></Link>
+        <Link to="/region"><div class="tp">Asia</div></Link>
+        <Link to="/region"><div class="tp">Europe</div></Link>
+        <Link to="/region"><div class="tp">Oceania</div></Link>
+        <Link to="/region"><div class="tp">Polar</div></Link>
     </nav>
     )
 }

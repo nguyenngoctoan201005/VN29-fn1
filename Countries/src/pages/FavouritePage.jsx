@@ -1,5 +1,5 @@
 import './favouritepage.css'
-
+import { Link } from 'react-router-dom'
 export function FavouritePage() {
     return (
         <main className='fv-container'>
@@ -14,7 +14,7 @@ export function FavouritePage() {
                         <div>- cioc : VIE </div>
                     </div>
                     <div className="sc-ctn-btn">
-                        <div>Xem chi tiết</div>
+                        <Link to="/detail"><div>Xem chi tiết</div></Link>
                         <div>Xóa khỏi danh sách</div>
                     </div>
                 </div>
@@ -31,13 +31,12 @@ export function FavouritePage() {
                         <div>- cioc : VIE </div>
                     </div>
                     <div className="sc-ctn-btn">
-                        <div>Xem chi tiết</div>
+                        <Link to="/detail"><div>Xem chi tiết</div></Link>
                         <div>Xóa khỏi danh sách</div>
                     </div>
                 </div>
             </section>
-
-            <section className="favourite-item">
+             <section className="favourite-item">
                 <div className="sc-img">
                     <img src="img/Co-Vietnam.png" alt="" />
                 </div>
@@ -48,7 +47,7 @@ export function FavouritePage() {
                         <div>- cioc : VIE </div>
                     </div>
                     <div className="sc-ctn-btn">
-                        <div>Xem chi tiết</div>
+                        <Link to="/detail"><div>Xem chi tiết</div></Link>
                         <div>Xóa khỏi danh sách</div>
                     </div>
                 </div>

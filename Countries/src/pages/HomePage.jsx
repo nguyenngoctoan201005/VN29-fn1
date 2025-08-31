@@ -1,5 +1,5 @@
 import './homepage.css';
-
+import { Link } from 'react-router-dom';
 export function HomePage() {
     return (
         <main className='hm-container'>
@@ -17,11 +17,15 @@ export function HomePage() {
                     <div className="cpn-tt-txt">
                         ASIA
                     </div>
-                    <div className="cpn-tt-xem">
-                        Xem tất cả
+                    <div>
+                        <Link to="/region"  className="cpn-tt-xem">
+                            Xem tất cả
+                        </Link>
+
                     </div>
                 </div>
                 <div className="cpn-cont">
+                    <Link to="/detail">
                     <div className="cpn-cont-det">
                         <div className="cpn-cont-det-img"><img src="img/Co-Vietnam.png" alt="" /></div>
                         <div className="cpn-cont-info">
@@ -36,7 +40,8 @@ export function HomePage() {
 
                         </div>
                     </div>
-
+                    </Link>
+                    <Link to="/detail">
                     <div className="cpn-cont-det">
                         <div className="cpn-cont-det-img"><img src="img/Co-Vietnam.png" alt="" /></div>
                         <div className="cpn-cont-info">
@@ -51,7 +56,8 @@ export function HomePage() {
 
                         </div>
                     </div>
-
+                    </Link>
+                    <Link to="/detail">
                     <div className="cpn-cont-det">
                         <div className="cpn-cont-det-img"><img src="img/Co-Vietnam.png" alt="" /></div>
                         <div className="cpn-cont-info">
@@ -66,7 +72,8 @@ export function HomePage() {
 
                         </div>
                     </div>
-
+                    </Link>
+                    <Link to="/detail">
                     <div className="cpn-cont-det">
                         <div className="cpn-cont-det-img"><img src="img/Co-Vietnam.png" alt="" /></div>
                         <div className="cpn-cont-info">
@@ -81,7 +88,8 @@ export function HomePage() {
 
                         </div>
                     </div>
-
+                    </Link>
+                    <Link to="/detail">
                     <div className="cpn-cont-det">
                         <div className="cpn-cont-det-img"><img src="img/Co-Vietnam.png" alt="" /></div>
                         <div className="cpn-cont-info">
@@ -96,6 +104,7 @@ export function HomePage() {
 
                         </div>
                     </div>
+                    </Link>
 
                 </div>
             </section>
@@ -105,11 +114,15 @@ export function HomePage() {
                     <div className="cpn-tt-txt">
                         ASIA
                     </div>
-                    <div className="cpn-tt-xem">
-                        Xem tất cả
+                    <div>
+                        <Link to="/region"  className="cpn-tt-xem">
+                            Xem tất cả
+                        </Link>
+
                     </div>
                 </div>
                 <div className="cpn-cont">
+                    <Link to="/detail">
                     <div className="cpn-cont-det">
                         <div className="cpn-cont-det-img"><img src="img/Co-Vietnam.png" alt="" /></div>
                         <div className="cpn-cont-info">
@@ -124,7 +137,8 @@ export function HomePage() {
 
                         </div>
                     </div>
-
+                    </Link>
+                    <Link to="/detail">
                     <div className="cpn-cont-det">
                         <div className="cpn-cont-det-img"><img src="img/Co-Vietnam.png" alt="" /></div>
                         <div className="cpn-cont-info">
@@ -139,7 +153,8 @@ export function HomePage() {
 
                         </div>
                     </div>
-
+                    </Link>
+                    <Link to="/detail">
                     <div className="cpn-cont-det">
                         <div className="cpn-cont-det-img"><img src="img/Co-Vietnam.png" alt="" /></div>
                         <div className="cpn-cont-info">
@@ -154,7 +169,8 @@ export function HomePage() {
 
                         </div>
                     </div>
-
+                    </Link>
+                    <Link to="/detail">
                     <div className="cpn-cont-det">
                         <div className="cpn-cont-det-img"><img src="img/Co-Vietnam.png" alt="" /></div>
                         <div className="cpn-cont-info">
@@ -169,7 +185,8 @@ export function HomePage() {
 
                         </div>
                     </div>
-
+                    </Link>
+                    <Link to="/detail">
                     <div className="cpn-cont-det">
                         <div className="cpn-cont-det-img"><img src="img/Co-Vietnam.png" alt="" /></div>
                         <div className="cpn-cont-info">
@@ -184,6 +201,7 @@ export function HomePage() {
 
                         </div>
                     </div>
+                    </Link>
 
                 </div>
             </section>
@@ -193,11 +211,15 @@ export function HomePage() {
                     <div className="cpn-tt-txt">
                         ASIA
                     </div>
-                    <div className="cpn-tt-xem">
-                        Xem tất cả
+                    <div>
+                        <Link to="/region"  className="cpn-tt-xem">
+                            Xem tất cả
+                        </Link>
+
                     </div>
                 </div>
                 <div className="cpn-cont">
+                    <Link to="/detail">
                     <div className="cpn-cont-det">
                         <div className="cpn-cont-det-img"><img src="img/Co-Vietnam.png" alt="" /></div>
                         <div className="cpn-cont-info">
@@ -212,7 +234,8 @@ export function HomePage() {
 
                         </div>
                     </div>
-
+                    </Link>
+                    <Link to="/detail">
                     <div className="cpn-cont-det">
                         <div className="cpn-cont-det-img"><img src="img/Co-Vietnam.png" alt="" /></div>
                         <div className="cpn-cont-info">
@@ -227,7 +250,8 @@ export function HomePage() {
 
                         </div>
                     </div>
-
+                    </Link>
+                    <Link to="/detail">
                     <div className="cpn-cont-det">
                         <div className="cpn-cont-det-img"><img src="img/Co-Vietnam.png" alt="" /></div>
                         <div className="cpn-cont-info">
@@ -242,7 +266,8 @@ export function HomePage() {
 
                         </div>
                     </div>
-
+                    </Link>
+                    <Link to="/detail">
                     <div className="cpn-cont-det">
                         <div className="cpn-cont-det-img"><img src="img/Co-Vietnam.png" alt="" /></div>
                         <div className="cpn-cont-info">
@@ -257,7 +282,8 @@ export function HomePage() {
 
                         </div>
                     </div>
-
+                    </Link>
+                    <Link to="/detail">
                     <div className="cpn-cont-det">
                         <div className="cpn-cont-det-img"><img src="img/Co-Vietnam.png" alt="" /></div>
                         <div className="cpn-cont-info">
@@ -272,6 +298,7 @@ export function HomePage() {
 
                         </div>
                     </div>
+                    </Link>
 
                 </div>
             </section>
