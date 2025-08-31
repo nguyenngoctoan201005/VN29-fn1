@@ -1,0 +1,60 @@
+.hd_lf img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+
+.hd_md-ipt input{
+    padding: 15px;
+    width: 500px;
+    border-radius: 30px;
+    font-size: 16px;
+    border: 0.5px solid gray;
+}
+.hd_md-btn{
+    padding: 14px;
+    background-color: #dd2400;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    width: 80px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.hd_md-btn:hover{
+    background-color: #d78a8a;
+    transition: 0.3s;
+}
+
+.hd_md{
+    display: flex;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:#452727 ;
+    border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
+    padding-top: 5px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.hd_rg-count{
+    text-align: center;
+    color: white;
+    font-family :'Roboto', sans-serif;
+    font-weight: 700;
+    background-color: #dd2400;
+    border-radius: 20px;
+}
+
+
+
