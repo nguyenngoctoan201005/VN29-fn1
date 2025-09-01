@@ -27,7 +27,7 @@ function App() {
         <Route path="/" element={<HomePage countries ={countries} />}></Route>
         <Route path="/detail" element={<DetailPage />}></Route>
         <Route path="/favourite" element={<FavouritePage />}></Route>
-        <Route path="/region" element={<RegionPage />}></Route>
+        <Route path="/region" element={<RegionPage region = 'africa' />}></Route>
       </Routes>
     </>
   )
