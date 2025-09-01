@@ -60,20 +60,28 @@
 
 .cpn-cont-det-img img{
     width: 180px;
+    height: 120px;
+    text-align: center;
 }
+
 
 .cpn-cont-info{
     font-family: 'Roboto', sans-serif;
     color: #6a4040;
     display: flex;
     font-weight: 500;
+    height: 80px;
 }
 
 .cpn-cont-info-heart img{
     width: 20px;
-    margin-left: 35px;
-    margin-top: 40px;
+
     cursor: pointer;
+    margin-left: 150px;
+}
+
+.cpn-cont-info-heart{
+    height: 40px;
 }
 
 .cpn-cont-info-heart img:hover{
@@ -85,12 +93,14 @@
 
 .cpn-cont-det{
     background-color: antiquewhite;
-    padding: 8px;
+    padding: 8px 8px 0 8px;
     border: 2px solid rgb(219, 149, 149);
     box-shadow: 5px 5px 5px rgb(221, 213, 213);
     margin-bottom: 40px;
     padding-bottom: 30px;
     border-radius: 10px;
+    width: 180px;
+    height:220px ;
 }
 
 .cpn-cont-det:hover{

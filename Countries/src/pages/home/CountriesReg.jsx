@@ -1,13 +1,13 @@
 import './homepage.css';
 import { Country } from './Country';
 import { Link } from 'react-router-dom';
-export function CountriesReg() {
 
+export function CountriesReg({ region ,namerg }) {
     return (
         <section className="cpn">
             <div className="cpn-tt">
                 <div className="cpn-tt-txt">
-                    ASIA
+                    {namerg}
                 </div>
                 <div>
                     <Link to="/region" className="cpn-tt-xem">
@@ -17,12 +17,9 @@ export function CountriesReg() {
                 </div>
             </div>
             <div className="cpn-cont">
-                <Country />
-                <Country />
-                <Country />
-                <Country />
-                <Country />
-                <Country />
+                {region.slice(0, 6).map((country, index) => (
+                    <Country key={country.cca2 || index} country={country} />
+                ))}
             </div>
         </section>
     );
