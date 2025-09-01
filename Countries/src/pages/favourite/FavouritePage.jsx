@@ -1,58 +1,27 @@
 import './favouritepage.css'
 import { Link } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { CountryInFa } from './CountryInFa';
+
+
 export function FavouritePage() {
+
+    const [oceania, setOceania] = useState([]);
+    useEffect(() => {
+        const cont = async () => {
+            const res = await fetch('https://restcountries.com/v3.1/region/oceania');
+            const data = await res.json();
+            setOceania(data);
+        }
+
+        cont();
+    }, [])
+
     return (
         <main className='fv-container'>
-            <section className="favourite-item">
-                <div className="sc-img">
-                    <img src="img/Co-Vietnam.png" alt="" />
-                </div>
-                <div className="sc-ctn">
-                    <div className="sc-ctn-if">
-                        <div>- Name : VietNam</div>
-                        <div>- cca2 : VN </div>
-                        <div>- cioc : VIE </div>
-                    </div>
-                    <div className="sc-ctn-btn">
-                        <Link to="/detail"><div>Xem chi tiết</div></Link>
-                        <div>Xóa khỏi danh sách</div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="favourite-item">
-                <div className="sc-img">
-                    <img src="img/Co-Vietnam.png" alt="" />
-                </div>
-                <div className="sc-ctn">
-                    <div className="sc-ctn-if">
-                        <div>- Name : VietNam</div>
-                        <div>- cca2 : VN </div>
-                        <div>- cioc : VIE </div>
-                    </div>
-                    <div className="sc-ctn-btn">
-                        <Link to="/detail"><div>Xem chi tiết</div></Link>
-                        <div>Xóa khỏi danh sách</div>
-                    </div>
-                </div>
-            </section>
-             <section className="favourite-item">
-                <div className="sc-img">
-                    <img src="img/Co-Vietnam.png" alt="" />
-                </div>
-                <div className="sc-ctn">
-                    <div className="sc-ctn-if">
-                        <div>- Name : VietNam</div>
-                        <div>- cca2 : VN </div>
-                        <div>- cioc : VIE </div>
-                    </div>
-                    <div className="sc-ctn-btn">
-                        <Link to="/detail"><div>Xem chi tiết</div></Link>
-                        <div>Xóa khỏi danh sách</div>
-                    </div>
-                </div>
-            </section>
-
+            {oceania.map((country) => (
+                <CountryInFa key={country.cca2} country={country} />
+            ))}
         </main>
     )
 }
