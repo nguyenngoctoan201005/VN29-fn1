@@ -1,7 +1,13 @@
 import './header.css'
 import { Link } from 'react-router-dom'
 
-export function Header() {
+export function Header({list}) {
+
+  function Count(){
+      return  list.length;
+  }
+
+
   return (
     <header>
         <div className="hd_lf">
@@ -13,7 +19,7 @@ export function Header() {
         </div>
         <div className="hd_rg">
             <Link to="/favourite"><div><img src="img/heart.png" alt="" /></div></Link>
-            <div className="hd_rg-count">5</div>
+            <div className="hd_rg-count">{Count()}</div>
         </div>
     </header>
   )

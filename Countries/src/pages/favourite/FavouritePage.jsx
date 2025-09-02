@@ -1,26 +1,29 @@
 import './favouritepage.css'
 import { Link } from 'react-router-dom'
-import { useState, useEffect } from 'react'
 import { CountryInFa } from './CountryInFa';
 
 
-export function FavouritePage() {
+export function FavouritePage({ list, countries }) {
 
-    const [oceania, setOceania] = useState([]);
-    useEffect(() => {
-        const cont = async () => {
-            const res = await fetch('https://restcountries.com/v3.1/region/oceania');
-            const data = await res.json();
-            setOceania(data);
-        }
+    const test = [];
+    countries.forEach((country) => {      // ele đổi tên thành country cho dễ hiểu
+        list.forEach(favoriteCode => { // element đổi tên thành favoriteCode
 
-        cont();
-    }, [])
+            // So sánh mã của country với mã yêu thích
+            if (country.cca2 === favoriteCode) {
+
+                // Push cả object country vào mảng kết quả
+                test.push(country);
+            }
+        });
+    });
+
+    // Bây giờ mảng 'test' mới chứa đúng những gì mày cần
 
     return (
         <main className='fv-container'>
-            {oceania.map((country) => (
-                <CountryInFa key={country.cca2} country={country} />
+            {test.map(country => (
+                <CountryInFa key={country.cioc} country={country} />
             ))}
         </main>
     )

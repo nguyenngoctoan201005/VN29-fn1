@@ -1,49 +1,54 @@
-
-.favourite-item{
-    background-color: #452727;
+.favourite-item {
+    background-color: #faf8f8;
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 12px;
     margin-bottom: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 2px solid gainsboro;
 }
 
-.sc-img img{
+.sc-img img {
     width: 250px;
     height: 150px;
     border-radius: 8px;
     cursor: pointer;
 }
 
-.sc-ctn{
+.sc-ctn {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 1200px;
 }
-.sc-ctn-if,.sc-ctn-btn{
+
+.sc-ctn-if,
+.sc-ctn-btn {
     font-size: 20px;
     font-weight: 500;
     font-family: 'roboto', sans-serif;
 }
 
-.sc-ctn-if div{
+.sc-ctn-if div {
     margin-bottom: 10px;
-    color: #ffffff;
+    color: #666;
 }
 
-.sc-ctn-btn div{
+.sc-ctn-btn div {
     padding: 10px;
-    background-color:#dd2400 ;
     border-radius: 10px;
+    background: #e53935;
+    color: #fff;
     text-align: center;
-    color: white;
     cursor: pointer;
     margin-bottom: 10px;
-    margin-right: 50px
+    margin-right: 50px;
+    transition: all 0.2s ease;
 }
 
-.sc-ctn-btn div:hover{
+.sc-ctn-btn div:hover {
     background-color: #d78a8a;
     transition: 0.3s;
     color: rgb(240, 13, 13);

@@ -28,7 +28,6 @@ export function RegionPage({ region }) {
         cont();
     }, [])
 
-    console.log(europe);
 
 
     const [americas, setAmericas] = useState([]);

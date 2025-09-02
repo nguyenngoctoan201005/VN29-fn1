@@ -1,10 +1,18 @@
 import './homepage.css';
 import { Link } from 'react-router-dom';
 
-export function Country({ country }) {
+export function Country({ country, setList, list  }) {
+    function addCountry() {
+            if(list.includes(country.cca2)){
+                alert('Đất nước đã có trong thư mục yêu thích rồi ❤️ ');
+                return ;
+            }
+        setList([...list, country.cca2])
+    }
+
     return (
-        <Link to="/detail">
-            <div className="cpn-cont-det">
+        <div className="cpn-cont-det">
+            <Link to="/detail">
                 <div className="cpn-cont-det-img"><img src={country.flags.png} alt="" /></div>
                 <div className="cpn-cont-info">
                     <div>
@@ -14,10 +22,10 @@ export function Country({ country }) {
                     </div>
 
                 </div>
-                <div className="cpn-cont-info-heart">
-                    <img src="img/heart.png" alt="" />
-                </div>
+            </Link>
+            <div className="cpn-cont-info-heart" >
+                <img src="img/heart.png" alt="" onClick={addCountry} />
             </div>
-        </Link>
+        </div>
     )
 }

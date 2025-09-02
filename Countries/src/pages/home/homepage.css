@@ -43,6 +43,9 @@
     margin-left: 50px;   
     border: 1px solid gray;
     cursor: pointer;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  
 }
 
 .imgintro-img2 img{
@@ -52,7 +55,28 @@
     margin-left: 30px;  
     border: 1px solid gray;
     cursor: pointer;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    
 }
+
+.imgintro-img2 img:hover{
+    border: 2px solid rgb(24, 24, 23);
+    cursor: pointer;
+    transition: 0.3s;
+    transform: translateY(-4px);     
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.imgintro-img1 img:hover{
+    border: 2px solid rgb(24, 24, 23);
+    cursor: pointer;
+    transition: 0.3s;
+    transform: translateY(-4px);     
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+
 .imgintro{
     display: flex;
     margin-bottom: 40px;
@@ -92,13 +116,13 @@
 
 
 .cpn-cont-det{
-    background-color: antiquewhite;
+    background-color: #f7f4f4;
     padding: 8px 8px 0 8px;
-    border: 2px solid rgb(219, 149, 149);
-    box-shadow: 5px 5px 5px rgb(221, 213, 213);
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);;
     margin-bottom: 40px;
     padding-bottom: 30px;
-    border-radius: 10px;
+    border-radius: 12px;
     width: 180px;
     height:220px ;
 }
@@ -106,8 +130,9 @@
 .cpn-cont-det:hover{
     border: 2px solid rgb(24, 24, 23);
     cursor: pointer;
-    transform: scale(1.1);
     transition: 0.3s;
+    transform: translateY(-6px);     /* hiệu ứng nổi khi hover */
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 }
 
 .cpn-cont{

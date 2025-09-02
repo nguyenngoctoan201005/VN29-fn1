@@ -2,7 +2,7 @@ import './homepage.css';
 import { Link } from 'react-router-dom';
 import { CountriesReg } from './CountriesReg';
 import { useState, useEffect } from 'react';
-export function HomePage() {
+export function HomePage({setList , list }) {
 
     const [asia, setAsia] = useState([]);
     useEffect(() => {
@@ -27,7 +27,7 @@ export function HomePage() {
         cont();
     }, [])
 
-    console.log(europe);
+    
 
 
     const [americas, setAmericas] = useState([]);
@@ -75,11 +75,11 @@ export function HomePage() {
                 </div>
             </section>
 
-            <CountriesReg region={asia} namerg="ASIA" />
-            <CountriesReg region={europe} namerg="EUROPE" />
-            <CountriesReg region={americas} namerg="AMERICAS" />
-            <CountriesReg region={oceania} namerg="OCEANIA" />
-            <CountriesReg region={africa} namerg="AFRICA" />
+            <CountriesReg region={asia} namerg="ASIA"  setList={setList} list ={list} />
+            <CountriesReg region={europe} namerg="EUROPE" setList={setList}  list ={list} />
+            <CountriesReg region={americas} namerg="AMERICAS" setList={setList}  list ={list}  />
+            <CountriesReg region={oceania} namerg="OCEANIA" setList={setList} list ={list}  />
+            <CountriesReg region={africa} namerg="AFRICA" setList={setList} list ={list}  />
         </main>
 
     );
