@@ -2,7 +2,7 @@ import './regionpage.css'
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react';
 import { CountryInRg } from './CountryInRg';
-
+import { useParams } from 'react-router-dom';
 export function RegionPage({ region }) {
 
     const [asia, setAsia] = useState([]);
@@ -63,24 +63,25 @@ export function RegionPage({ region }) {
         cont();
     }, [])
 
+    const{regionCode} = useParams();
 
     return (
         <>
             <div className='tt'>{region}</div>
             <main className="region-container">
-                {region === 'asia' && asia.map(country => (
+                {regionCode === 'asia' && asia.map(country => (
                     <CountryInRg key={country.cca2} country={country} />
                 ))}
-                {region === 'europe' && europe.map(country => (
+                {regionCode === 'europe' && europe.map(country => (
                     <CountryInRg key={country.cca2} country={country} />
                 ))}
-                {region === 'americas' && americas.map(country => (
+                {regionCode === 'americas' && americas.map(country => (
                     <CountryInRg key={country.cca2} country={country} />
                 ))}
-                {region === 'africa' && africa.map(country => (
+                {regionCode === 'africa' && africa.map(country => (
                     <CountryInRg key={country.cca2} country={country} />
                 ))}
-                {region === 'oceania' && oceania.map(country => (
+                {regionCode === 'oceania' && oceania.map(country => (
                     <CountryInRg key={country.cca2} country={country} />
                 ))}
             </main>

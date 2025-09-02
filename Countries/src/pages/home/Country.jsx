@@ -12,7 +12,7 @@ export function Country({ country, setList, list  }) {
 
     return (
         <div className="cpn-cont-det">
-            <Link to="/detail">
+            <Link to={`/detail/${country.cca2}`}>
                 <div className="cpn-cont-det-img"><img src={country.flags.png} alt="" /></div>
                 <div className="cpn-cont-info">
                     <div>

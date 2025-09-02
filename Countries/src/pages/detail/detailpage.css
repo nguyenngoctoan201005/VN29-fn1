@@ -1,9 +1,9 @@
-
-.det_content{
+.det_content {
     display: flex;
     justify-content: space-around;
 }
-.det_title{
+
+.det_title {
     font-size: 50px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -16,15 +16,43 @@
     margin-bottom: 40px;
 }
 
-.det_flag img{
+.det_flag1 img {
     width: 500px;
     height: 300px;
-    border-radius: 20px;  
-    border: 1px solid gray;
-    cursor: pointer;    
+    border-radius: 20px;
+    border: 2px solid gray;
+    cursor: pointer;
+    border: 2px solid gray;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
 
-.det_flag_mt{
+.det_flag1 img:hover {
+    transform: translateY(-4px);
+    transition: linear 0.2s;
+}
+.det_flag2 img:hover {
+    transform: translateY(-4px);
+    transition: linear 0.2s;
+}
+
+.det_flag2 {
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.det_flag2 img {
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgb(137, 130, 130);
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.det_flag_mt {
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -33,12 +61,13 @@
     margin-bottom: 10px;
 }
 
-.det_txt{
+.det_txt {
     display: flex;
     justify-content: space-around;
 }
 
-.det_txt-lf,.det_txt-rg {
+.det_txt-lf,
+.det_txt-rg {
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -50,4 +79,3 @@
     padding: 50px;
     border-radius: 20px;
 }
-

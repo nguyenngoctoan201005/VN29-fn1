@@ -1,14 +1,11 @@
 import './nav.css'
 import { Link } from 'react-router-dom'
-export function Nav() {
+export function Nav({region}) {
   return (
     <nav>
-        <Link to="/region"><div className="tp">Africa</div></Link>
-        <Link to="/region"><div className="tp">Americas</div></Link>
-        <Link to="/region"><div className="tp">Asia</div></Link>
-        <Link to="/region"><div className="tp">Europe</div></Link>
-        <Link to="/region"><div className="tp">Oceania</div></Link>
-        <Link to="/region"><div className="tp">Polar</div></Link>
+        {region.map(reg =>
+          <Link to={`/region/${reg}`}><div className="tp">{reg.charAt(0).toUpperCase() + reg.slice(1)}</div></Link>
+        )}
     </nav>
     )
 }

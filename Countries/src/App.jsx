@@ -21,21 +21,22 @@ function App() {
 
 
   const [list, setList] = useState([]);
+
+
   useEffect(() => {
-    // Mỗi khi 'list' thay đổi, cái hàm này sẽ chạy
     console.log("List đã được cập nhật:", list);
   }, [list]);
 
-
+  const region = ['asia' , 'europe' , 'americas', 'oceania', 'africa']
   return (
     <>
       <Header list={list} />
-      <Nav />
+      <Nav region={region} />
       <Routes>
         <Route path="/" element={<HomePage countries={countries} setList={setList} list={list} />}></Route>
-        <Route path="/detail" element={<DetailPage />}></Route>
+        <Route path="/detail/:countryCode" element={<DetailPage />}></Route>
         <Route path="/favourite" element={<FavouritePage list={list} countries={countries} />}></Route>
-        <Route path="/region" element={<RegionPage region='africa' />}></Route>
+        <Route path="/region/:regionCode" element={<RegionPage />}></Route>
       </Routes>
     </>
   )
