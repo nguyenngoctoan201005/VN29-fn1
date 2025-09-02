@@ -33,9 +33,9 @@ function App() {
       <Header list={list} />
       <Nav region={region} />
       <Routes>
-        <Route path="/" element={<HomePage countries={countries} setList={setList} list={list} />}></Route>
+        <Route path="/" element={<HomePage region={region} countries={countries} setList={setList} list={list} />}></Route>
         <Route path="/detail/:countryCode" element={<DetailPage />}></Route>
-        <Route path="/favourite" element={<FavouritePage list={list} countries={countries} />}></Route>
+        <Route path="/favourite" element={<FavouritePage setList={setList} list={list} countries={countries} />}></Route>
         <Route path="/region/:regionCode" element={<RegionPage list ={list} setList={setList} />} ></Route>
       </Routes>
     </>

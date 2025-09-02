@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { CountryInFa } from './CountryInFa';
 
 
-export function FavouritePage({ list, countries }) {
+export function FavouritePage({ list, countries , setList }) {
 
     const test = [];
     countries.forEach((country) => {      // ele đổi tên thành country cho dễ hiểu
@@ -23,7 +23,7 @@ export function FavouritePage({ list, countries }) {
     return (
         <main className='fv-container'>
             {test.map(country => (
-                <CountryInFa key={country.cioc} country={country} />
+                <CountryInFa key={country.cioc} country={country} list = {list} setList={setList} />
             ))}
         </main>
     )

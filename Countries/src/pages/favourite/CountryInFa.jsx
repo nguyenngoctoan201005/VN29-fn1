@@ -1,7 +1,17 @@
 import './favouritepage.css'
 import { Link } from 'react-router-dom';
 
-export function CountryInFa({ country }) {
+export function CountryInFa({ country , list , setList }) {
+    // 2. Viết hàm xử lý việc xóa
+    const handleDelete = () => {
+        // Dùng `filter` để tạo ra một mảng mới không chứa cca2 của nước này
+        const newList = list.filter(code => code !== country.cca2);
+        
+        // Cập nhật lại state ở component App bằng mảng mới
+        setList(newList);
+    }
+
+
     return (
         <section className="favourite-item">
             <div className="sc-img">
@@ -14,8 +24,8 @@ export function CountryInFa({ country }) {
                     <div>- cioc : {country.cioc} </div>
                 </div>
                 <div className="sc-ctn-btn">
-                    <Link to="/detail"><div>Xem chi tiết</div></Link>
-                    <div>Xóa khỏi danh sách</div>
+                    <Link to={`/detail/${country.cca2}`}><div>Xem chi tiết</div></Link>
+                    <div onClick={handleDelete}>Xóa khỏi danh sách</div>
                 </div>
             </div>
         </section>
