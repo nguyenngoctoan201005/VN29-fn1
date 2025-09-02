@@ -1,9 +1,19 @@
 import './regionpage.css'
 import { Link } from 'react-router-dom';
-export function CountryInRg({ country }) {
+export function CountryInRg({ country, list, setList }) {
+
+    function addCountry() {
+        if (list.includes(country.cca2)) {
+            alert('Đất nước đã có trong thư mục yêu thích rồi ❤️ ');
+            return;
+        }
+        setList([...list, country.cca2])
+    }
+
     return (
-        <Link to="/detail">
-            <div className="cpn-cont-detr">
+
+        <div className="cpn-cont-detr">
+            <Link to={`/detail/${country.cca2}`}>
                 <div className="cpn-cont-det-imgr"><img src={country.flags.png} alt="" /></div>
                 <div className="cpn-cont-infor">
                     <div>
@@ -12,11 +22,13 @@ export function CountryInRg({ country }) {
                         <div>- cioc : {country.cioc} </div>
                     </div>
                 </div>
-                <div className="cpn-cont-info-heartr">
-                    <img src="img/heart.png" alt="" />
-                </div>
+            </Link>
+            <div className="cpn-cont-info-heartr">
+                <img src="/img/heart.png" alt="" onClick={addCountry} />
             </div>
-        </Link>
+
+        </div>
+
     );
 }
 

@@ -33,9 +33,9 @@
 
 .cpn-cont-info-heartr img{
     width: 20px;
-
     cursor: pointer;
     margin-left: 150px;
+    margin-top: -15px;
 }
 
 .cpn-cont-info-heart{
@@ -50,15 +50,15 @@
 
 
 .cpn-cont-detr{
-    background-color: antiquewhite;
-    padding: 0px 8px 0 8px;
-    border: 2px solid rgb(219, 149, 149);
-    box-shadow: 5px 5px 5px rgb(221, 213, 213);
+    background-color: #f7f4f4;
+    padding: 0 8px 10px 8px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);;
     margin-bottom: 40px;
-    padding-bottom: 30px;
-    border-radius: 10px;
+    padding-bottom: 45px;
+    border-radius: 12px;
     width: 180px;
-    height:240px ;
+    height:220px ;
 }
 
 .cpn-cont-detr:hover{

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react';
 import { CountryInRg } from './CountryInRg';
 import { useParams } from 'react-router-dom';
-export function RegionPage({ region }) {
+export function RegionPage({ region ,list , setList }) {
 
     const [asia, setAsia] = useState([]);
     useEffect(() => {
@@ -63,6 +63,7 @@ export function RegionPage({ region }) {
         cont();
     }, [])
 
+
     const{regionCode} = useParams();
 
     return (
@@ -70,19 +71,19 @@ export function RegionPage({ region }) {
             <div className='tt'>{region}</div>
             <main className="region-container">
                 {regionCode === 'asia' && asia.map(country => (
-                    <CountryInRg key={country.cca2} country={country} />
+                    <CountryInRg key={country.cca2} country={country} list ={list} setList={setList} />
                 ))}
                 {regionCode === 'europe' && europe.map(country => (
-                    <CountryInRg key={country.cca2} country={country} />
+                    <CountryInRg key={country.cca2} country={country} list ={list} setList={setList} />
                 ))}
                 {regionCode === 'americas' && americas.map(country => (
-                    <CountryInRg key={country.cca2} country={country} />
+                    <CountryInRg key={country.cca2} country={country} list ={list} setList={setList} />
                 ))}
                 {regionCode === 'africa' && africa.map(country => (
-                    <CountryInRg key={country.cca2} country={country} />
+                    <CountryInRg key={country.cca2} country={country} list ={list} setList={setList} />
                 ))}
                 {regionCode === 'oceania' && oceania.map(country => (
-                    <CountryInRg key={country.cca2} country={country} />
+                    <CountryInRg key={country.cca2} country={country} list ={list} setList={setList} />
                 ))}
             </main>
         </>
